@@ -1,0 +1,10 @@
+{
+  "name": "brinkeradvisor-rates",
+  "version": "1.0.0",
+  "description": "Find current public fixed-income rates, compare rate categories, and build illustrative maturity ladders with canonical and original-source citations.",
+  "author": { "name": "BrinkerAdvisor", "url": "https://www.brinkeradvisor.com/" },
+  "homepage": "https://rates.brinkeradvisor.com/",
+  "repository": "https://github.com/adpadinc/brinkeradvisor-rates-claude",
+  "license": "MIT",
+  "keywords": ["fixed-income", "rates", "treasury", "cd", "mcp"]
+}

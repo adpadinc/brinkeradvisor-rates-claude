@@ -1,0 +1,12 @@
+{
+  "name": "brinkeradvisor",
+  "owner": { "name": "BrinkerAdvisor" },
+  "metadata": { "description": "BrinkerAdvisor's public fixed-income rate connector for Claude Code." },
+  "plugins": [
+    {
+      "name": "brinkeradvisor-rates",
+      "source": "./",
+      "description": "Public fixed-income rate discovery, comparisons, and illustrative ladders with source citations."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "brinkeradvisor-rates": {
+      "type": "http",
+      "url": "https://mcp.brinkeradvisor.com/mcp"
+    }
+  }
+}
