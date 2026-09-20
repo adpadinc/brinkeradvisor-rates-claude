@@ -28,7 +28,7 @@ test("release has no backend, hooks, dependency manifest or credentials", async 
     .filter(entry => entry.isFile())
     .map(entry => `${entry.parentPath}/${entry.name}`.replaceAll("\\", "/"))
     .filter(path => !path.includes("/.git/"));
-  const allowed = ["/.mcp.json", "/.claude-plugin/plugin.json", "/.claude-plugin/marketplace.json", "/README.md", "/LICENSE", "/test/package.test.mjs"];
+  const allowed = ["/.mcp.json", "/.claude-plugin/plugin.json", "/.claude-plugin/marketplace.json", "/README.md", "/LICENSE", "/test/package.test.mjs", "/.github/workflows/ci.yml"];
   assert.equal(files.length, allowed.length);
   for (const suffix of allowed) assert.equal(files.filter(path => path.endsWith(suffix)).length, 1);
 });
