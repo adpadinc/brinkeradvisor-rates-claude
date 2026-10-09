@@ -37,7 +37,7 @@ The service's tool descriptions carry routing and citation requirements. Display
 
 This is public information, not personalized investment, tax or suitability advice. The service does not forecast the economy, access accounts, trade, transact, or expose subscriber/private research. Do not include account numbers, credentials, personal financial details or other sensitive information in requests.
 
-Requests go to the public HTTPS MCP endpoint. The backend uses fixed public BrinkerAdvisor rate data and privacy-safe aggregate operational counters. It does not persist prompts, raw queries, hypothetical amounts or per-user request histories in product telemetry. Because a tool invocation increments aggregate counters, its MCP `readOnlyHint` and `idempotentHint` are both false; `destructiveHint` and `openWorldHint` are false. No cookies or authentication are required by BrinkerAdvisor.
+Requests go to the public HTTPS MCP endpoint. The backend uses fixed public BrinkerAdvisor rate data and privacy-safe aggregate operational counters. It does not persist prompts, raw queries, hypothetical amounts or per-user request histories in product telemetry. Because a tool invocation increments aggregate counters, its MCP `readOnlyHint` and `idempotentHint` are both false; `destructiveHint` is false. `openWorldHint` is true because the tools read a fixed public internet source. No cookies or authentication are required by BrinkerAdvisor.
 
 - [Public rate site](https://rates.brinkeradvisor.com/)
 - [Privacy policy](https://mcp.brinkeradvisor.com/privacy)
