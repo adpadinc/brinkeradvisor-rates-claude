@@ -50,3 +50,14 @@ The remote service can be updated independently of this connector package. The b
 ## License
 
 The connector metadata and documentation in this repository are licensed under MIT; see [LICENSE](LICENSE). That license does not cover the separately hosted backend, rate data, third-party source content, or BrinkerAdvisor trademarks. The hosted service's terms and privacy policy remain separate.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    Metadata[Connector metadata in this repository] --> Client[Claude Code MCP client]
+    Client --> Service[Fixed public BrinkerAdvisor MCP endpoint]
+    Service --> Feed[Validated fixed public Rates feed]
+```
+
+This package contains connection metadata, documentation and package-boundary tests. Acquisition, freshness, tool execution and aggregate operational storage belong to the separately maintained service. Installing or validating this package neither deploys that service nor proves client execution or directory acceptance.
