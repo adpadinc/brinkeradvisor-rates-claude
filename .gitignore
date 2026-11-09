@@ -1,0 +1,14 @@
+# Local agent permissions, transcripts, and credentials
+**/.claude/settings.local.json
+**/.claude/projects/
+**/.claude/transcripts/
+**/.codex/sessions/
+**/.codex/memories/
+**/.specstory/
+.aider.chat.history.md
+.aider.input.history
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
